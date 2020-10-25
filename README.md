@@ -29,7 +29,7 @@ For demo data, just create an account and order products.
 
 
 ### coding style 
-*MVC Architecture
+* MVC Architecture
 
 
 ## Built With
