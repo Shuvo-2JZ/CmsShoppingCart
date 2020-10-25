@@ -12,6 +12,13 @@ namespace CmsShoppingCart.Controllers
 {
     public class CartController : Controller
     {
+        //For testing
+
+        public ActionResult Car()
+        {
+            return View();
+        }
+
         // GET: Cart
         public ActionResult Index()
         {
@@ -262,12 +269,12 @@ namespace CmsShoppingCart.Controllers
             }
 
             // Email admin
-            var client = new SmtpClient("mailtrap.io", 2525)
+            /*var client = new SmtpClient("mailtrap.io", 2525)
             {
                 Credentials = new NetworkCredential("21f57cbb94cf88", "e9d7055c69f02d"),
                 EnableSsl = true
             };
-            client.Send("admin@example.com", "admin@example.com", "New Order", "You have a new order. Order number " + orderId);
+            client.Send("admin@example.com", "admin@example.com", "New Order", "You have a new order. Order number " + orderId);*/
 
             // Reset session
             Session["cart"] = null;
